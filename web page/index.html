@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Site</title>
+    <link rel="icon" href="../image/My%20Site.ioc">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" rel="script" src="javascript.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="/static/plugins/Jquery/jquery-3.3.1.min.js"></script>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<div id="demo">
+    <br/>
+    <div class="date">当前时间:&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="date" id="year"></div>
+    <div class="date" id="month"></div>
+    <div class="date" id="day"> </div>
+    <br/>
+    <div class="date" id="hour"></div>
+    <div class="date" id="minute"></div>
+    <div class="date" id="second"></div>
+</div>
+<script>
+    window.setInterval("d()",1000);
+    function d() {
+    var d = new Date();
+    document.getElementById("year").innerHTML = d.getFullYear()+' 年';
+    document.getElementById("month").innerHTML = d.getMonth()+1+'月';
+    document.getElementById("day").innerHTML = '&nbsp;'+d.getDate()+' 日';
+    document.getElementById("hour").innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北&nbsp;京:&nbsp;&nbsp;&nbsp;&nbsp;'
+            +d.getHours()+' 时 ';
+    document.getElementById("minute").innerHTML = d.getMinutes()+'  分';
+    document.getElementById("second").innerHTML = d.getSeconds()+' 秒';
+    }
+</script>
+
+<!--网站背景色-->
+<div id="header" style="margin: 3px">
+<!--站标-->
+    <h4><img src="../image/My Site.png"alt="my site.png" width="80"height="80">My Site</h4>
+</div>
+
+<!--登录前显示效果 -->
+<div id="offSign" style="line-height:25px;margin: 5px;">
+    <!--form action=" "-->
+        <h5>用户登录</h5>
+        <label for="user"class="font4">用户:</label>
+       <input id="name" type="text" name="username" value="">
+        <button type="reset" class="buttonstyle1">清除</button><br>
+        <label for="password"class="font4">密码:</label>
+        <input type="password" name="user password"value="">
+        <button type="submit" class="buttonstyle1" onclick="sign();time()">登录</button>
+        <h5 class="font1">还没有创建账户？
+            <a href="register/registers.html"><img src="../image/register.png"width="30"height="20" style="vertical-align:middle;"> </a>
+        </h5>
+        <a target="_blank" href="register.html"></a>
+    <!--/form-->
+</div>
+<!--登录后显示效果 -->
+<div id="onSign" style="font-size:20px;margin: 5px;display:none;color: #59a1f7">
+
+</div>
+
+
+<div align="center">
+<img src="../image/my site name.png" alt="my site.png"width="500" height="100" >
+</div>
+<body marginwidth="20">
+<!--此处设置搜索框-->
+<form target="_blank" action="https://www.baidu.com" method="get" style="margin: 60px">
+    <h1>
+        <div align="center">
+            <img src="../image/search.png" alt="search.png" width="25"height="60" style="vertical-align:middle;">
+            <input name="wd" id="search" value="" placeholder="搜一搜吧" style="width: 700px;height: 50px; border-color: #59a1f7;font-size: 18px;cursor:text;border-radius: 15px;">
+            <button class="buttonstyle2" style="width: 100px;height: 55px;border-radius: 15px;">立即搜索</button>
+        </div>
+    </h1>
+</form>
+<!--
+<div class="canvas1">
+    <a class="font1" href="mimafangwen.html" >访问私人相册</a><br/>
+    <a class="font1"  href="普通烟花.html" >普通烟花</a><br/>
+    <a class="font1"  href="炫彩烟花.html">炫彩烟花</a>
+</div>
+-->
+
+<div class="canvas2">
+        <!--百度 凤凰 新浪 搜狐 导航栏-->
+    <h4 class="font2" style="line-height: 40px" >&nbsp;友情链接</h4>
+    <a target="_blank" href="https://www.baidu.com"><img src="../image/baidu.png" alt="baidu.png" style="vertical-align:middle;">百度一下</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="http://www.ifeng.com/"><img src="../image/ifeng.png" alt="ifeng.png" style="vertical-align:middle;">凤凰网</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="https://www.sina.com"><img src="../image/sina.png" alt="sin.png" style="vertical-align:middle;">新浪网</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="https://www.sohu.com/"><img src="../image/sohu.png" alt="sohu.png" style="vertical-align:middle;">搜狐网</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="description.html"><img src="../image/shuoming.png" width="18" height="20" alt="" style="vertical-align:middle;" >网站设计说明</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="inquire.html"><img src="../image/diaocha.png" width="18" height="20" alt="" style="vertical-align:middle;">问卷调查</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#relate" onclick="lianxi()"><img src="../image/phone.png" width="18" height="20" alt="" style="vertical-align:middle;">联系我们</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="download.html"><img src="../image/android.png" width="18" height="20" alt="" style="vertical-align:middle;">本站小应用</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+<!--
+<div class="canvas3" id="news">
+    <h4 class="font2">&nbsp;新闻模块</h4>
+    <a href="http://news.sohu.com/"><img src="../image/sohu nws.png" alt="sohu news.png"width="50"height="20">搜狐新闻</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="http://news.baidu.com/"><img src="../image/baidu news.png" alt="baidu news.png"width="50"height="20">百度新闻</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://news.sina.com.cn/"><img src="../image/sina news.png"alt="sina news.png"width="50"height="20">新浪新闻</a>
+</div>
+-->
+<div class="canvas4">
+    <ul>
+        <li>
+            <a target="_blank" href="https://www.bilibili.com"><img src="../image/bilibili%20.png" width="18"height="17" alt="bilibili.png" style="vertical-align:middle;">哔哩哔哩</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a target="_blank" href="http://v.hao123.baidu.com"><img src="../image/hao123.png"width="18"height="17" alt="hao123.png" style="vertical-align:middle;">hao123</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a target="_blank" href="https://haokan.baidu.com"><img src="../image/haokan.png"width="18"height="17" alt="haokan.png" style="vertical-align:middle;">好看视频</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a target="_blank" href="https://www.iqiyi.com"><img src="../image/iqiyi.png" width="18" height="17" alt="iqiyi.png" style="vertical-align:middle;">爱奇艺</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a target="_blank" href="https://www.jd.com"><img src="../image/jingdong.png" width="18" height="17" alt="jingdong.png" style="vertical-align:middle;">京东</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a target="_blank" href="https://mos.m.taobao.com/union/jhsjx2020?"><img src="../image/juhuasuan.png" width="18" height="17" alt="juhuasuan.png" style="vertical-align:middle;">聚划算</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a target="_blank" href="https://ai.taobao.com"><img src="../image/taobao.png" width="18" height="17" alt="taobao.png" style="vertical-align:middle;">淘宝</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a target="_blank" href="https://www.qq.com/"><img src="../image/tengxun.png" width="18" height="17" alt="tengxun.png" style="vertical-align:middle;">腾讯网</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a target="_blank" href="https://www.163.com/"><img src="../image/wangyi.png" width="18" height="17" alt="jwangyi.png" style="vertical-align:middle;">网易</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a target="_blank" href="https://www.zhihu.com"><img src="../image/zhihu.png" width="18" height="17" alt="zhihu.png" style="vertical-align:middle;">知乎</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a target="_blank" href="https://www.suning.com"><img src="../image/suning.png" width="18" height="17" alt="sunning.png" style="vertical-align:middle;">苏宁易购</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+           <a target="_blank" href="https://www.cnki.net/"><img src="../image/zhiwang.png" width="18" height="17" alt="zhiwang.png" style="vertical-align:middle;">知网</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a target="_blank" href="https://www.12306.cn"><img src="../image/12306.png" width="18" height="17" alt="12306.png" style="vertical-align:middle;">12306</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a target="_blank" href="https://map.baidu.com/"><img src="../image/baiduditu.png" width="18" height="17" alt=".png" style="vertical-align:middle;">百度地图</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a target="_blank" href="https://www.huya.com/"><img src="../image/huya.png" width="18" height="17" alt=".png" style="vertical-align:middle;">虎牙直播</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a target="_blank" href="https://game.hao123.com/"><img src="../image/freegame.png" width="18" height="17" alt=".png" style="vertical-align:middle;">免费游戏</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a target="_blank" href="https://passport.weibo.com"><img src="../image/weibo.png" width="18" height="17" alt=".png" style="vertical-align:middle;">新浪微博</a>
+        </li>
+    </ul>
+</div>
+
+<div class="canvas5">
+    <h2 class="font1" style="font-size: 30px; position: absolute;">热 门 影 视</h2><br><br><br><hr style="color: #ff5700">
+    <div>
+        <iframe height="200px;" frameborder="1" src="https://v.qq.com/txp/iframe/player.html?vid=r0033ilbb4p" allowFullScreen="true"></iframe>
+         <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;猎狐</div>
+    </div>
+    <br>
+    <div>
+        <iframe height="200px;" frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=s0033s6x9tw" allowFullScreen="true"></iframe>
+        <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;清平乐</div>
+    </div>
+    <br>
+    <div>
+        <iframe height="200px;" frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=l0033spqumo" allowFullScreen="true"></iframe>
+        <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龙岭迷窟</div>
+    </div>
+    <br>
+    <div>
+        <iframe height="200px;" frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=m00253deqqo" allowFullScreen="true"></iframe>
+        <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;斗罗大陆</div>
+    </div>
+    <br/>
+    <div>
+        <iframe height="200px;" frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=o0034qdrsic" allowFullScreen="true"></iframe>
+        <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;幸福，触手可及</div>
+    </div>
+    <br>
+    <div>
+        <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=q003305dzmd" allowFullScreen="true"></iframe>
+        <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风味人间</div>
+    </div>
+    <br>
+    <div>
+        <iframe height="200px;" frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=p003402s2fx" allowFullScreen="true"></iframe>
+        <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;月上重火</div>
+    </div>
+    <br>
+</div>
+
+
+<div id="box">
+    <div>
+        <h3 class="font1" style="font-size: 30px;">时事新闻</h3><br/>
+        <div style="float: left;width: 100%;">
+            <a target="_blank" href="" style="float: left; "><img src="../image/Tlangp.jpg" width="200"  height="150"></a>
+            <a  target="_blank"href="https://www.sohu.com/a/402106475_123753?spm=smpc.home.fspic.2.15922927262310tUxaTi&_f=index_focus_1" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">面临全国抗议压力 特朗普将签署警察改革行政令</li>
+            </a><br/>
+            <a target="_blank" href="https://www.sohu.com/a/402106814_260616?spm=smpc.home.fspic.1.15922927262310tUxaTi&_f=index_focus_0" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">北京为何突然暴发疫情？溯源为何重要？吴尊友李兰娟权威解读</li>
+            </a><br/>
+            <a  target="_blank" href="https://www.sohu.com/a/404321386_162758?spm=smpc.news-home.top-news3.1.1593239757497XLZ6Uj4&_f=index_chan08news_5" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">男子不配合防疫，从杭州乘高铁到达无锡后确诊？官方通报</li>
+            </a><br/>
+            <a  target="_blank"href="https://www.sohu.com/a/404313560_162522?spm=smpc.news-home.top-news4.1.1593239757497XLZ6Uj4&_f=index_chan08news_10" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">印度陆军司令向国防部长汇报：在中印实控线做长期准备</li>
+            </a><br/>
+        </div>
+        <br/>
+
+
+         <div style="float: left;width: 100%;">
+             <br/>
+             <a  target="_blank"href="" style="float: left; "><img src="../image/sanwenyu.jpg" width="200"  height="150"></a>
+             <a  target="_blank"href="https://www.sohu.com/a/402106259_260616?spm=smpc.home.pic-group.1.15922927262310tUxaTi&_f=index_focus_3" style="position:relative;left: 40px;">
+                 <li style="list-style-type:square;white-space:nowrap;">全球新冠肺炎确诊病例累计超800万，死亡逾43.5万  </li>
+             </a><br/>
+             <a target="_blank" href="https://www.sohu.com/a/402120523_123753?spm=smpc.home.pic-group.4.15922927262310tUxaTi&_f=index_focus_6" style="position:relative;left: 40px;">
+                 <li style="list-style-type:square;white-space:nowrap;">欧洲边境管理局担忧出现新一轮难民潮,前往欧洲的难民人数预计将出现激增。 </li>
+             </a><br/>
+             <a  target="_blank"href="http://news.sohu.com/?spm=smpc.content.nav.2.1593239752030Ms3CE4X" style="position:relative;left: 40px;">
+                 <li style="list-style-type:square;white-space:nowrap;">男子抢劫杀人埋尸后安家桂林 23年后变"成功人士"</li>
+             </a><br/>
+             <a  target="_blank"href="https://www.sohu.com/a/404344504_260616?spm=smpc.news-home.pol-subject-news.6.1593239757497XLZ6Uj4&_f=index_chan08pol_socnews_5" style="position:relative;left: 40px;">
+                 <li style="list-style-type:square;white-space:nowrap;">海南一渔船在昌江沉没5渔民落水，2人获救3人仍失联</li>
+             </a><br/>
+         </div>
+        <br/>
+
+         <div style="float: left;width:100%">
+             <br/>
+             <a target="_blank" href="" style="float: left;"><img src="../image/lanming.jpeg" width="200"  height="150"></a>
+             <a href="https://www.sohu.com/subject/320704?scm=1002.410065.0.0-0&spm=smpc.news-home.subject-news.1.1593239757497XLZ6Uj4&_f=index_chan08socnews_0" style="position:relative;left: 40px;">
+                 <li style="list-style-type:square;white-space:nowrap;">特朗普挪用资金建边境墙违法|今日国际要闻</li>
+             </a><br/>
+             <a  target="_blank"href="https://www.sohu.com/a/402197524_260616?spm=smpc.home.top-news3.4.15922927262310tUxaTi&_f=index_news_9" style="position:relative;left: 40px;">
+                 <li style="list-style-type:square;white-space:nowrap;">伊拉克巴格达国际机场再遭火箭弹袭击，未造成人员伤亡 </li>
+             </a><br/>
+             <a  target="_blank" href="http://news.sohu.com/?spm=smpc.content.nav.2.1593239752030Ms3CE4X" style="position:relative;left: 40px;">
+                 <li style="list-style-type:square;white-space:nowrap;">俄共议员建议将9月3日设为“对军国主义日本胜利日”</li>
+             </a><br/>
+             <a  target="_blank"href="https://www.sohu.com/a/404342119_267106?spm=smpc.news-home.mil-cul-news.6.1593239757497XLZ6Uj4&_f=index_chan08mil_culnews_5" style="position:relative;left: 40px;">
+                 <li style="list-style-type:square;white-space:nowrap;">撒哈拉沙尘暴到达美国</li>
+             </a><br/>
+         </div>
+
+        <div style="float: left;width: 100%;">
+            <br/>
+            <a target="_blank" href="" style="float: left; left: 10px;"><img src="../image/yilak.jpeg" width="200"  height="150"></a>
+            <a target="_blank" href="https://www.sohu.com/a/404311820_569716?spm=smpc.news-home.business-stock-news.1.1593239757497XLZ6Uj4&_f=index_chan08businessnews_0" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">不让獐子岛强制退市，处罚就是作用大于正面影响 </li>
+            </a><br/>
+            <a  target="_blank"href="https://www.sohu.com/a/404308816_561670?spm=smpc.news-home.financial-news.2.1593239757497XLZ6Uj4&_f=index_chan08licainews_1" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">美国单日新增病例创纪录打击股市 金价收复盘中失地上涨 </li>
+            </a><br/>
+            <a  target="_blank"href="https://www.sohu.com/a/404269569_719175?scm=0.0.0.0&spm=smpc.ch25.top-news-1.1.1593241532985cwSwjYg" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">期末考试取消，暑假时间不变，高考迎来四大变化</li>
+            </a><br/>
+            <a  target="_blank" href="https://www.sohu.com/a/404273127_142216?scm=0.0.0.0&spm=smpc.ch30.top-news-2.1.1593241972509Z6f8l7h" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">微软彻底放弃线下！将关闭所有零售店，结束与苹果实体店的11年PK </li>
+            </a><br/>
+        </div>
+
+        <div style="float: left;width: 100%;">
+            <br/>
+            <a target="_blank" href="http://news.ifeng.com/c/7xdl8O4ZQsn" style="float: left; left: 10px;">
+                <img src="../image/sichuang.jpg" width="200"  height="150"></a>
+            <a target="_blank" href="http://news.ifeng.com/c/7xdl8O4ZQsn" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">实拍四川阿坝山体滑坡瞬间 泥土轰然倒塌山谷腾起浓烟</li>
+            </a><br/>
+            <a  target="_blank"href="https://www.sohu.com/a/404346210_267106?g=0&spm=smpc.news-home.pol-news.1.159324265222369cYGTw&_f=index_chan08polnews_0" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">2020年上海中考开考 多举措保障防疫安全 </li>
+            </a><br/>
+            <a  target="_blank"href="https://www.sohu.com/a/404351726_120135071?spm=smpc.mil-home.feed.1.1593242911550769hi1m" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">大陆军机频繁绕台，美国专家语出惊人：台海可能引爆第三次世界大战 </li>
+            </a><br/>
+            <a  target="_blank" href="https://www.sohu.com/a/404351430_267106?spm=smpc.mil-home.feed.2.1593242911550769hi1m" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">法国将读取遭伊朗误击客机黑匣子数据</li>
+            </a><br/>
+        </div>
+
+        <div style="float: left;width: 100%;">
+            <br/>
+            <a target="_blank" href="https://www.sohu.com/a/404343236_162758?g=0&spm=smpc.news-home.pol-news.3.159324265222369cYGTw&_f=index_chan08polnews_2" style="float: left; left: 10px;">
+                <img src="../image/lvyou.jpeg" width="200"  height="150"></a>
+            <a target="_blank" href="https://www.sohu.com/a/404343236_162758?g=0&spm=smpc.news-home.pol-news.3.159324265222369cYGTw&_f=index_chan08polnews_2" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">文明旅游不能丢 别给景区“添堵”</li>
+            </a><br/>
+            <a  target="_blank" href="https://www.sohu.com/a/404350200_120394345?spm=smpc.news-home.mil-cul-news.3.159324265222369cYGTw&_f=index_chan08mil_culnews_2" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">印度这次又得罪谁了？收到海外30万侨民信号后，立刻派出大批军舰 </li>
+            </a><br/>
+            <a  target="_blank" href="https://www.sohu.com/a/404349179_100145046?spm=smpc.news-home.mil-cul-news.6.159324265222369cYGTw&_f=index_chan08mil_culnews_5" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">今时不同往日，终于有人收拾美国？67国支持国际刑事法庭起诉美军 </li>
+            </a><br/>
+            <a  target="_blank" href="https://www.sohu.com/a/404348628_255783?spm=smpc.news-home.mil-cul-news.8.159324265222369cYGTw&_f=index_chan08mil_culnews_7" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">英国苏格兰最大城市发生袭击事件致多人死伤 </li>
+            </a><br/>
+        </div>
+
+        <div style="float: left;width: 100%;">
+            <br/>
+            <iframe style="float: left;" src="https://player.bilibili.com/player.html?aid=841017944&bvid=BV1p54y1B75o&cid=202219138&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="200"  height="150"> </iframe>
+            <a target="_blank" href="https://www.sohu.com/a/402197524_260616?spm=smpc.home.top-news3.4.15922927262310tUxaTi&_f=index_news_9" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">【视频】重庆23区县遭暴雨袭击，三条河流出现超保证水位</li>
+            </a><br/>
+            <a  target="_blank" href="https://new.qq.com/rain/a/20200627V04HWF00" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">美国单日确诊病例数创新高！特朗普却再次表态：不做检测就不会有新病例</li>
+            </a><br/>
+            <a  target="_blank"href="https://new.qq.com/omn/20200627/20200627A0AVBZ00.html" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">美国连续三天刷新确诊增长纪录 彭斯：说明检测能力增加 是好消息</li>
+            </a><br/>
+            <a  target="_blank" href="https://new.qq.com/rain/a/20200626A0NYAF00" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">抵制中国？印媒：最终伤害的会是印度</li>
+            </a><br/>
+        </div>
+
+        <div style="float: left;width: 100%;">
+            <br/>
+            <iframe style="float: left;" src="https://player.bilibili.com/player.html?aid=626084749&bvid=BV1ct4y1974h&cid=202108500&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="200"  height="150"> </iframe>
+            <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <a target="_blank" href="https://www.sohu.com/a/402197524_260616?spm=smpc.home.top-news3.4.15922927262310tUxaTi&_f=index_news_9" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">【视频】记者直击6.18罐车爆炸现场</li>
+            </a><br/>
+
+            <a target="_blank"href="https://hb.qq.com/a/20200627/002274.htm" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">暴雨又要来啦！这里有一份重要提醒</li>
+            </a><br/>
+            <a  target="_blank" href="https://hb.qq.com/a/20200627/003771.htm" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">全国首家全领域知识产权快速维权中心有望落户沌口</li>
+            </a><br/>
+        </div>
+
+        <div style="float: left;width: 100%;">
+            <br/>
+            <a  target="_blank" href="https://new.qq.com/rain/a/20200626A05TXV00" style="float: left; ">
+                <img src="../image/kamu.webp" width="200"  height="150"></a>
+            <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <a target="_blank" href="https://new.qq.com/rain/a/20200626A05TXV00" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">脱口秀演员卡姆涉毒是怎么被抓的？这背后竟是一个特大贩毒网络！</li>
+            </a><br/>
+            <a target="_blank" href="https://new.qq.com/zt/template/?id=WLD2020052800612400&pgv_ref=aio2015&ptlang=2052" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">全美抗议警察暴力执法致黑人死亡</li>
+            </a><br/>
+            <a  target="_blank" href="https://new.qq.com/rain/a/20200627A0B13N00" style="position:relative;left: 40px;">
+                <li style="list-style-type:square;white-space:nowrap;">反种族歧视浪潮下，欧莱雅公司删去护肤品中 “美白”“白皙”等字眼</li>
+            </a><br/>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<br/>
+<div align="center" id="footer">
+    <a  target="_blank" name="setting" href="settings.html">设置</a><br/>
+<!--版权信息-->
+     CopyRight©2020My Site <br/>
+    @My Site All Rights Reserved
+    <br/><br/>
+    <address id="relate">
+        <a href="mailto:2504621340@qq.com" style="color: #0a74cb">联系邮箱：2504621340@qq.com </a>
+    </address>
+</div>
+
+
+</body>
+</html>

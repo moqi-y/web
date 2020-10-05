@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>问卷调查</title>
+    <link rel="icon" href="../image/My%20Site.ioc">
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        line-height:2;
+    }
+</style>
+<body>
+<div align="center">
+    <br/><br/>
+<span style="font-size: 25px; white-space: nowrap;">网&nbsp;站&nbsp;调&nbsp;查&nbsp;问&nbsp;卷</span>
+    <br/><br/> <br/>
+</div>
+<form class="container" action="submitdate.html">
+    <div>
+    <span>姓名：</span><input type="text">
+    </div>
+    <div>
+        <span>性别：</span>
+        <input type="radio" id="male" name="sex" /><label for="male"/>男</lable>
+        <input type="radio" id="female" name="sex" /><label for="female"/>女</lable>
+        <input type="radio" id="other" name="sex" disabled="disabled" /><lable for="other">保密</lable>
+    </div>
+    <div>
+        <span>教育程度：</span>
+        <select class="common">
+            <option>高中</option>
+            <option>中专</option>
+            <option>大专</option>
+            <option selected="selected">本科</option>
+            <option>硕士</option>
+            <option>博士</option>
+            <option>其他</option>
+        </select>
+    </div>
+    <div class="container">
+        <span>Q1：你最喜欢下列那种类型的网站？（单选）</span>
+
+        <div style=" float: left; left: 80px;">
+        <input type="radio" id="style1" name="style"/><label/>可爱，卡通</lable><br/>
+            <input type="radio" id="style2" name="style"/><label/>清新，简洁</lable><br/>
+        <input type="radio" id="style3" name="style" /><label/>悬疑，神秘</lable><br/>
+        <input type="radio" id="style4" name="style" /><label/>时尚，新颖</lable><br/>
+        <input type="radio" id="style4" name="style" /><label/>舒适，温馨</lable><br/>
+        </div>
+    </div>
+    <br/><br/><br/><br/>
+    <div class="container">
+        <span>Q2：你认为什么色调适合我们的网站？（单选）</span>
+        <div style=" float: left; left: 80px;">
+            <input type="radio" name="style"/><label/>冷色调</lable><br/>
+            <input type="radio"  name="style"/><label/>暖色调</lable><br/>
+            <input type="radio" name="style" /><label/>简洁雅致</lable><br/>
+            <input type="radio" name="style" /><label/>清新自然</lable><br/>
+        </div>
+    </div>
+
+    <br/><br/><br/>
+    <div class="container">
+        <span>Q3：你希望我们网站有什么什么样的设计特色？（单选）</span>
+        <div style=" float: left; left: 80px;">
+            <input type="radio" name="style"/><label/> </lable>严谨大方，设计专业<br/>
+            <input type="radio"  name="style"/><label/>浪漫温馨，视觉设计新潮</lable><br/>
+            <input type="radio" name="style" /><label/>简洁清晰，目的性强</lable><br/>
+            <input type="radio" name="style" /><label/>独特新颖，视觉冲击感强</lable><br/>
+        </div>
+    </div>
+    <br/><br/><br/>
+    <div class="container">
+        <span>Q4：你希望我们网站图片多一点还是文字多一点？（单选）</span>
+        <div style=" float: left; left: 80px;">
+            <input type="radio" name="style"/><label/> </lable>文字多一点<br/>
+            <input type="radio"  name="style"/><label/>图片多一点</lable><br/>
+            <input type="radio" name="style" /><label/>一样多</lable><br/>
+            <input type="radio" name="style" /><label/>无所谓</lable><br/>
+        </div>
+    </div>
+
+    <br/><br/><br/>
+    <div class="container">
+        <span>Q5：你希望我们网站的首页展示效果应该是？（单选）</span>
+        <div style=" float: left; left: 80px;">
+            <input type="radio" name="style"/><label/> </lable>多屏滚动展示<br/>
+            <input type="radio"  name="style"/><label/>单屏静态展示</lable><br/>
+            <input type="radio" name="style" /><label/></lable>多屏静态展示<br/>
+            <input type="radio" name="style" /><label/>无所谓</lable>单屏动态展示<br/>
+        </div>
+    </div>
+
+    <br/><br/><br/><br/>
+    <span>个人爱好：</span>
+    <input type="checkbox" id="football" name="hobby"/><lable for="football">新闻时事</lable>
+    <input type="checkbox" id="basketball" name="hobby"/><lable for="basketball">体育动态</lable>
+    <input type="checkbox" id="film" name="hobby" checked="checked"/><lable for="film">社会热点</lable>
+    <input type="checkbox" id="football" name="hobby"/><lable for="football">热门影视</lable><br/>
+    <span></span>
+    <input type="checkbox" id="basketball" name="hobby"/><lable for="basketball">学科知识</lable>
+    <input type="checkbox" id="film" name="hobby" checked="checked"/><lable for="film">生活技巧</lable>
+    <input type="checkbox" id="film" name="hobby" checked="checked"/><lable for="film">游戏娱乐</lable>
+    <input type="checkbox" id="film" name="hobby" checked="checked"/><lable for="film">搞笑视频</lable>
+    <div>
+
+    </div>
+
+<div>
+
+    <div>
+        对本网站提出宝贵意见：<br/>
+        <span></span><textarea class="mommon" maxlength="100"></textarea>
+    </div>
+    <div>
+        <span></span>
+        <input style="background:lightpink" type="submit" class="common" name="submitBtn" value="提交"/>
+    </div>
+
+</div>
+
+</form>
+
+<footer align="center">
+    <a href="index.html"><img src="../image/My%20Site.png" width="25" height="25">返回首页</a>
+</footer>
+
+
+    <style>
+
+        .container{
+            width: 40%;
+            margin: 20px auto;
+        }
+        .common{
+            width:230px;
+            height: 30px;
+        }
+        span{
+            display:inline-block;
+            width: 150px;
+
+            text-align: right;
+        }
+        div{
+            margin-bottom: 10px;
+        }
+        span{
+            white-space: nowrap;
+        }
+    </style>
+
+
+
+</div>
+
+</body>
+
+
+</html>

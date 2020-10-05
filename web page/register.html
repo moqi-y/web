@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" rel="script" src="javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="../image/My%20Site.ioc">
+</head>
+<h1>欢迎注册</h1>
+<body>
+<div>
+    用户名：<br/><input type="text" name="user register"><br/>
+    密 &nbsp;码：<br/><input  id="first" type="password" name="user password"><br/>
+    请再次输入密码：<br/><input id="again"  type="password" name="user password again">
+    <div id="miAgain" style="font-size: small;color: red;"></div>
+    <br/>
+
+<!--验证码-->
+    <div id="">
+            <input id="randomBox" type="text" name="randomBox">
+
+    <div id="random" align="center"><br>
+    </div>
+     <div id="inform" style="font-size: small; color: red;"> </div>
+        <br/>
+        <br/>
+    </div>
+   <!--<script>  //内嵌样式
+        function random()
+        {
+            document.getElementById("random").innerHTML = "2e3f";
+        }
+    </script>-->
+    <button type="button" onclick="random();pass();"  class="buttonstyle1">点击验证</button>
+    <br/><br/><br/><br/><input id="submit" onclick="submit()"  type="submit" name="submit" value="提交" class="buttonstyle1">
+    <a href="index.html"><input type="button" name="back" value="返回" class="buttonstyle1"></a>
+</div>
+
+</body>
+</html>

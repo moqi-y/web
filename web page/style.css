@@ -1,0 +1,178 @@
+/*超链接样式*/
+a:link {color: black;text-decoration:none}
+a:hover {color: #0000FF;text-decoration: none}
+a:visited {color: indigo;text-decoration: none}
+a:active {color:coral;text-decoration: none}
+
+/*字体样式*/
+.font1{font-family: 幼圆;color: #ff5700
+}
+.font2{font-family: 华文行楷;font-size: 20px}/*小标题字体*/
+.font3{font-family: 方正舒体;}
+.font4{font-family: 华文宋体}
+
+/*行段样式*/
+
+
+/*按钮样式*/
+.buttonstyle1{color: black;background-color: #a2a6a2;font-weight: bold}
+.buttonstyle2{color: black;background-color: #59a1f7;font-weight: bold}
+
+/*模块背景样式*/
+.bgcolcr1{background-color: cornsilk}
+.bgcolcr2{background-color: floralwhite}
+.bgcolcr3{background-color: cornflowerblue}
+
+/*盒子样式*/
+
+/*提示信息*/
+/*#prompt{
+    padding: 0px;
+    height: 50px;
+    background-color: #ff6032;
+}
+*/
+/*页眉*/
+ #header{
+    padding: 0px;
+     height: 100px;
+     background-color: #ffa217;
+ }
+/*页脚*/
+#footer {
+    padding: 3px;
+    margin: 30px;
+    margin-top: 0px;
+    width: 1200px;
+    height: 115px;
+    background-color: #ffa217;
+}
+
+ #welcome{
+     float:right;
+     font-family: 幼圆;
+     color: burlywood;
+
+}
+/*<li>网页链接*/
+ul>li {
+    float: left;
+    list-style: none;
+    padding: 15px;
+    padding-bottom: 5px;
+}
+
+.canvas1
+{
+    height: 100px;
+    width: 100px;
+    line-height: 25px;
+    border-width: 1px;
+    border-style:solid;
+    border-color: #00001c;
+    background:blanchedalmond;
+    padding: 8px;
+    margin: 5px 40px 5px 40px;
+}
+
+/*百度 凤凰 新浪 搜狐 导航栏*/
+.canvas2{
+    height: 100px;
+    width: 1170px;
+    line-height: 25px;
+    border-width: 1px;
+    border-style:solid;
+    border-color: #00001c;
+    background:blanchedalmond;
+    padding: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 5px 40px 5px 40px;
+}
+
+/*新闻模块*/
+.canvas3 {
+    height: auto;
+    width: 1170px;
+    border-top-width: 1px;
+    border-left-width:1px ;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    background:blanchedalmond ;
+    border-style: solid;
+    border-color: #00001c;
+    padding: 8px;
+    margin: -20px 40px 5px 40px;
+}
+#news {
+    position: relative;
+    left:130px;
+    top: 160px;
+}
+
+/*导航栏模块*/
+.canvas4 {
+    height: 110px;
+    width: 1170px;
+    border: 1px;
+    background: blanchedalmond;
+    border-style: solid;
+    border-color: #00001c;
+    padding: 8px;
+    padding-top: 15px;
+    margin: 0px 40px 0px 40px;
+    position: relative;
+    top: 5px;
+}
+/*热门影视*/
+.canvas5 {
+    height: auto;
+    width: 300px;
+    border: 1px;
+    background: blanchedalmond;
+    border-style: solid;
+    border-color: #00001c;
+    padding: 8px;
+    padding-top: 5px;
+    margin: 18px 40px 5px 40px;
+
+}
+
+    /*时事新闻*/
+#box{
+    height: 1730px;
+    width: 850px;
+    border:1px;
+    background: #ffebcd;
+    border-style: solid;
+    border-color: #00001c;
+    position: absolute;
+    top:765px;
+    left: 320px;
+    padding: 8px;
+    margin: 0px 0px 0px 40px;
+    }
+
+#random{
+    height: 25px;
+    width: 70px;
+    background-color: #59a1f7;
+}
+#randomBox{
+    height: 20px;
+    width: 70px;
+    border: 1px solid;
+}
+
+#demo{
+    height: 94px;
+    width: 250px;
+    background-color: #59a1f7;
+    float: right;
+    margin: 0px 3px;
+    padding: 3px;
+}
+
+ .date{float: left;}
+
+
